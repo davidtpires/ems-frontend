@@ -1,4 +1,6 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function ListEmployeeComponent() {
   const dummyData = [
@@ -23,9 +25,9 @@ function ListEmployeeComponent() {
   ];
 
   return (
-    <div>
-      <h2>List of Employees</h2>
-      <table>
+    <div className='container'>
+      <h2 className='text-center'>List of Employees</h2>
+      <table className="table table-striped table-bordered">
         <thead>
           <tr>
             <th>Employee Id</th>
